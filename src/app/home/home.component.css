@@ -1,0 +1,11 @@
+.nav-link{
+    cursor: pointer;
+}
+
+.button{
+    width: 10%;
+    background-color: #A34A4A;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+}

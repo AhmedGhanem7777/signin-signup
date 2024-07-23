@@ -1,0 +1,31 @@
+<h1 class="text-center text-white title mb-5">Smart News System</h1>
+<div class="login shadow p-5">
+        <div class="head">
+            <div *ngIf="apiError" class="alert alert-danger mb-4">
+                {{apiError}}
+            </div>
+            <h3>Login</h3>
+            <span>Welcome Back! Please enter your details</span>
+        </div>
+        
+        <form (ngSubmit)="handleLogin(loginForm)" [formGroup]="loginForm" class="d-flex flex-column mt-5">
+
+            <input formControlName="email" class="inp mb-2" type="email" placeholder="Enter Your Email">
+            <div *ngIf="loginForm.get('email')?.errors && loginForm.get('email')?.touched" class="alert alert-danger">
+                <p *ngIf="loginForm.get('email')?.getError('email')" class="m-0">Email is invalid</p>
+                <p *ngIf="loginForm.get('email')?.getError('required')" class="m-0">Email is required</p>
+            </div>
+            
+            <input formControlName="password" class="inp mb-2" type="password" placeholder="Enter Your Password">
+            <div *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.touched" class="alert alert-danger">
+                <p *ngIf="loginForm.get('password')?.getError('pattern')" class="m-0">Password must start with upperCase then from 8 to 15</p>
+                <p *ngIf="loginForm.get('password')?.getError('required')" class="m-0">Password is required</p>
+            </div>
+
+            <p class="register mt-5" [routerLink]="['/register']">Register</p>
+            <button [disabled]="loginForm.invalid" class="button" type="submit">
+                <i *ngIf="isLoading" class="fas fa-spinner fa-spin"></i>
+                <span *ngIf="!isLoading">Login</span>
+            </button>
+        </form>
+    </div>

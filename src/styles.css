@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Inter:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.bg{
+    height: 100vh;
+    background-image: url('./assets/images/2bbbf44ebce55a8046277f90bfceb044.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    font-family: 'Cherry Bomb one';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 22px;
+    letter-spacing: 10%;
+}
+.login form .inp,
+.register form .inp {
+    background-color: #494949;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+}
+
+.login form .inp::placeholder,
+.register form .inp::placeholder{
+    color: #fff !important;
+    opacity: 1 !important;
+}

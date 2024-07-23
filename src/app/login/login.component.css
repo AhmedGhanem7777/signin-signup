@@ -1,0 +1,42 @@
+.login {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.login h3 {
+    color: #494949;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.login span {
+    color: #49494999;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+}
+
+.login .register {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: #A34A4A;
+    cursor: pointer;
+}
+
+.login .button {
+    background-color: #A34A4A;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login .button span,
+.login .button i {
+    color: #fff;
+}

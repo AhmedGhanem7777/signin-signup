@@ -1,0 +1,37 @@
+.register {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.register h3 {
+    color: #494949;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.register span {
+    color: #49494999;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+}
+
+.register .button {
+    background-color: #A34A4A;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.register .button span,
+.register .button i {
+    color: #fff;
+}
+
+.alert p{
+    margin: 0;
+}
